@@ -1,0 +1,13 @@
+---
+interface Props {
+  platform: string;
+  username: string;
+}
+
+const socialProps = Astro.props;
+// const {platform, username} : Astro.props;
+
+<a href={`https://www.${socialProps.platform}.com/${socialProps.username}`}>
+  {socialProps.platform}
+</a>;
+---

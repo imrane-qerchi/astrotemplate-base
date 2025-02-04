@@ -1,6 +1,7 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: "Mon premier article de blog"
-pubDate: 2025-02-03
+pubDate: 2025-02-08
 description: "Il s'agit du premier article de mon nouveau blog Astro."
 author: "Imrane"
 image:
@@ -10,8 +11,6 @@ tags: ["astro", "blogging", "apprentissage en public"]
 ---
 
 # Mon premier article de blog
-
-Publié le : 2025-02-03
 
 Bienvenue sur mon _nouveau blog_ dédié à l'apprentissage d'Astro ! Ici, je vais partager mon parcours d'apprentissage en construisant un nouveau site web.
 
