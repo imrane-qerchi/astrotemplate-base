@@ -1,5 +1,8 @@
 ---
+import Navigation from '../components/Navigation.astro';
+import "../styles/global.css";
 
+const pageTitle = "Page de blog";
 ---
 
 <html lang="fr">
@@ -8,12 +11,10 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro - about</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
-    <a href="/">Accueil</a>
-    <a href="/about/">À propos</a>
-    <a href="/blog/">Blog</a>
+    <Navigation />
 
     <h1>Mon blog d'apprentissage Astro</h1>
     <p>Voici où je vais publier mon parcours d'apprentissage d'Astro.</p>
