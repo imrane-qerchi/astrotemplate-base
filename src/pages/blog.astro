@@ -1,12 +1,11 @@
 ---
+import { getCollection } from "astro:content";
 import BlogPost from "../components/BlogPost.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/global.css";
 
-const allPosts = Object.values(
-  import.meta.glob("./posts/*.md", { eager: true })
-);
 const pageTitle = "Page de blog";
+const allPosts = await getCollection("blog");
 ---
 
 <BaseLayout>
@@ -17,7 +16,7 @@ const pageTitle = "Page de blog";
         // <li>
         //   <a href={post.url}>{post.frontmatter.title}</a>
         // </li>
-        <BlogPost url={post.url} title={post.frontmatter.title} />
+        <BlogPost url={`/posts/${post.id}/`} title={post.data.title} />
       ))
     }
   </ul>
