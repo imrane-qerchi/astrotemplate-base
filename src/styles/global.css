@@ -24,6 +24,15 @@ h1 {
   font-size: 2.5rem;
 }
 
+html.dark {
+  background-color: #0d0950;
+  color: #fff;
+}
+
+.dark .nav-links a {
+  color: #fff;
+}
+
 /* Styles de la navigation */
 .hamburger {
   padding-right: 20px;
